@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Event</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+        }
+
+        .footer {
+            position: fixed;
+            text-align: center;
+            bottom: 5px;
+            width: 100%;
+        }
+
+        table input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid white;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            background-color: #70787e;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 ALIGN="CENTER"
+        style="color: aliceblue;background-color: rgb(16, 16, 17);font-family: Arial, Helvetica, sans-serif;">
+        <u>Event Management System</u>
+    </h2>
+    <div align="center">
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset style="border-color: rgb(16, 16, 17);border-width: 5px;">
+                <legend
+                    style="font-size: 150%;color: white;-webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <b>Add New Event</b>
+                </legend><br>
+                <table align="center" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label for="eid"> <b>Event ID:</b> </label>
+                        </td>
+                        <td>
+                            <input id="eid" type="text" name="eid" value="EVT001" style="width: 235px;" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ename"> <b>Event Name:</b> </label>
+                        </td>
+                        <td>
+                            <input id="ename" type="text" name="ename" placeholder="Enter Event Name"
+                                style="width: 235px;" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="etype"><b>Event Type:</b></label>
+                        </td>
+                        <td>
+                            <input type="radio" id="single" name="etype" value="Single">
+                            <label for="single">Individual Event</label>
+                            <input type="radio" id="team" name="etype" value="Team">
+                            <label for="team">Team Event</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="edesc"><b>Event Description: </b></label>
+                        </td>
+                        <td>
+                            <textarea id="edesc" name="edesc" rows="4" cols="30"
+                                placeholder="Enter Event Description"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="estart"><b>Event Start (date and time):</b></label>
+                        </td>
+                        <td>
+                            <input type="datetime-local" id="estart" name="estart" style="width: 235px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="eend"><b>Event End (date and time):</b></label>
+                        </td>
+                        <td>
+                            <input type="datetime-local" id="eend" name="eend" style="width: 235px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="eregend"><b>Event Registration End (date and time):</b></label>
+                        </td>
+                        <td>
+                            <input type="datetime-local" id="regend" name="eregend" style="width: 235px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="emode"><b>Event Mode:</b></label>
+                        </td>
+                        <td>
+                            <input type="radio" id="online" name="emode" value="online">
+                            <label for="online">Online Event</label>
+                            <input type="radio" id="offline" name="emode" value="offline">
+                            <label for="offline">Offline Event</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="eloc"><b>Event Location (in case of Offline):</b></label>
+                        </td>
+                        <td>
+                            <input type="text" id="eloc" name="eloc" style="width: 235px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="emax"><b>Maximum allowed Teams/Individuals Number:</b></label>
+                        </td>
+                        <td>
+                            <input type="text" id="emax" name="emax" style="width: 235px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <div align="center">
+                            <td colspan="2"><input style="background-color:#00d9ff " type="submit" value="ADD" />
+                            </td>
+                        </div>
+                    </tr>
+                </table><br>
+            </fieldset>
+        </form>
+    </div>
+    <div class="footer"><b>Designed By Edula Vinay Kumar Reddy</b></div>
+    <br>
+</body>
+
+</html>

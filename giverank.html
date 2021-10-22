@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Give Score</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+        }
+
+        .footer {
+            position: fixed;
+            text-align: center;
+            bottom: 5px;
+            width: 100%;
+        }
+
+        table input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid white;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            background-color: #70787e;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 ALIGN="CENTER"
+        style="color: aliceblue;background-color: rgb(14, 14, 15);font-family: Arial, Helvetica, sans-serif;">
+        <u>Event Management System</u>
+    </h2>
+    <div align="center">
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset style="border-color: rgb(13, 13, 14);border-width: 5px;">
+                <legend
+                    style="font-size: 150%;color: white;-webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <b>Give Score to Individuals & Teams</b>
+                </legend><br>
+                <table align="center" cellpadding="5">
+                    <tr>
+                        <td>
+                            <label for="eid"> <b>Select Event ID:</b> </label>
+                        </td>
+                        <td>
+                            <select name="eid" id="eid" style="width: 235px;">
+                                <option value="EVT001">EVT001</option>
+                                <option value="EVT002">EVT002</option>
+                                <option value="EVT003">EVT003</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="parid"><b>Select Team-ID/Participant-ID:</b> </label>
+                        </td>
+                        <td>
+                            <select name="parid" id="parid" style="width: 235px;">
+                                <option value="TM001">TM001</option>
+                                <option value="TM002">TM002</option>
+                                <option value="TM003">TM003</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="score"><b>Enter Score (out of 100): </b></label>
+                        </td>
+                        <td>
+                            <input id="score" type="text" name="score" placeholder="Enter Score" style="width: 235px;"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="remark"><b>Remarks: (if any) </b></label>
+                        </td>
+                        <td>
+                            <textarea id="remark" name="remark" rows="4" cols="30"
+                                placeholder="Enter Remarks"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <div align="center">
+                            <td colspan="2"><input style="background-color:#00d9ff " type="submit" value="SUBMIT" />
+                            </td>
+                        </div>
+                    </tr>
+                </table><br>
+            </fieldset>
+        </form>
+    </div>
+    <div class="footer"><b>Designed By Edula Vinay Kumar Reddy</b></div>
+    <br>
+</body>
+
+</html>
